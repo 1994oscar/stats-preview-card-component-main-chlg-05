@@ -1,0 +1,66 @@
+.stats-card{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    width: 32rem;
+    height: auto;
+    background-color: $dark-desaturated-blue-card;
+    &-header{
+        height: 20rem;
+        width: auto;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        background: linear-gradient(rgba($soft-violet-accent,.6), rgba($soft-violet-accent,.6)), url("../../images/image-header-mobile.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+        //background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-body{
+
+        margin: 3rem;
+        &__title{
+            text-align: center;
+            color: $white-main;
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $slightly-transparent-white-stat-headings;
+
+            >strong{
+                color: $soft-violet-accent;
+            }
+        }
+
+        &__description{
+            margin-top: 2rem;
+            text-align: center;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 1.5rem;
+            color: $slightly-transparent-white-paragraph;
+        }
+
+        &-info{
+
+
+            &__stats-numbers{
+                margin-top: 4rem;
+                & strong{
+                    font-family: 'Inter', sans-serif;
+                    text-align: center;
+                    display: block;
+                    color: $slightly-transparent-white-stat-headings;
+                    font-size: 2.5rem;
+                }
+
+                & span{
+                    text-align: center;
+                    display: block;
+                    color: $slightly-transparent-white-paragraph;
+                    font-family: 'Lexend Deca', sans-serif; ;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
