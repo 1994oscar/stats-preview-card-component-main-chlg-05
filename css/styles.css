@@ -45,7 +45,7 @@ body {
 }
 
 .card {
-  border-radius: 2%;
+  border-radius: 1rem;
   background-color: hsl(0deg, 0%, 100%);
   height: 10rem;
   width: 10rem;
@@ -61,8 +61,8 @@ body {
 .stats-card-header {
   height: 20rem;
   width: auto;
-  border-top-left-radius: 2%;
-  border-top-right-radius: 2%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   background: linear-gradient(rgba(170, 92, 219, 0.6), rgba(170, 92, 219, 0.6)), url("../../images/image-header-mobile.jpg");
   /* Chrome 10-25, Safari 5.1-6 */
   background-size: cover;
