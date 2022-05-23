@@ -54,7 +54,6 @@ body {
 
 .stats-card {
   margin-top: 10rem;
-  margin-bottom: 5rem;
   width: 32rem;
   height: auto;
   background-color: hsl(244deg, 38%, 16%);
@@ -69,9 +68,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  filter: brightness(0.74) contrast(133%);
 }
 @media screen and (min-width: 1024px) {
   .stats-card-header {
+    background: linear-gradient(rgba(170, 92, 219, 0.6), rgba(170, 92, 219, 0.6)), url("../../images/image-header-desktop.jpg");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: auto;
     border-bottom-right-radius: 1rem;
@@ -95,7 +100,7 @@ body {
 @media screen and (min-width: 1024px) {
   .stats-card-body__title {
     text-align: left;
-    font-size: 3.2rem;
+    font-size: 3.1rem;
   }
 }
 .stats-card-body__description {
@@ -156,6 +161,8 @@ body {
 @media screen and (min-width: 1024px) {
   .stats-card-body {
     width: 90rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
     padding-right: 10rem;
     padding-left: 5rem;
   }

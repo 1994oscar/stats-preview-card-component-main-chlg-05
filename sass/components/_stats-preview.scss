@@ -1,6 +1,6 @@
 .stats-card{
     margin-top: 10rem;
-    margin-bottom: 5rem;
+    //margin-bottom: 5rem;
     width: 32rem;
     height: auto;
     background-color: $dark-desaturated-blue-card;
@@ -10,12 +10,20 @@
         width: auto;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+        //background: url('../../images/image-header-mobile.jpg');
         background: linear-gradient(rgba($soft-violet-accent,.6), rgba($soft-violet-accent,.6)), url("../../images/image-header-mobile.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+        //background-color: rgba($color: #000000, $alpha: 1);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        filter: brightness(.74) contrast(133%); 
+
 
         @include media-min(1024px){
+            background: linear-gradient(rgba($soft-violet-accent,.6), rgba($soft-violet-accent,.6)), url("../../images/image-header-desktop.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             width: 100%;
             height: auto;
             border-bottom-right-radius: 1rem;
@@ -40,7 +48,7 @@
 
             @include media-min(1024px){
                text-align: left;
-               font-size: 3.2rem;
+               font-size: 3.1rem;
             }
         }
 
@@ -104,6 +112,8 @@
 
         @include media-min(1024px){
             width: 90rem;
+            padding-top: 7rem;
+            padding-bottom: 5rem;
             padding-right: 10rem;
             padding-left: 5rem;
          }
