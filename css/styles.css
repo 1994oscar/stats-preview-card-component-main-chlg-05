@@ -68,7 +68,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(0.74) contrast(133%);
+  filter: brightness(0.74) contrast(150%);
 }
 @media screen and (min-width: 1024px) {
   .stats-card-header {
