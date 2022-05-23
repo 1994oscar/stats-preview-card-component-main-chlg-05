@@ -79,13 +79,13 @@ body {
   }
 }
 .stats-card-body {
-  padding: 3rem;
+  padding: 4rem 2.5rem;
 }
 .stats-card-body__title {
   text-align: center;
   color: hsl(0deg, 0%, 100%);
   font-family: "Inter", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: hsla(0deg, 0%, 100%, 0.8);
 }
@@ -95,7 +95,7 @@ body {
 @media screen and (min-width: 1024px) {
   .stats-card-body__title {
     text-align: left;
-    font-size: 3.3rem;
+    font-size: 3.2rem;
   }
 }
 .stats-card-body__description {
@@ -104,16 +104,19 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.5rem;
   color: hsla(0deg, 0%, 100%, 0.6);
+  word-spacing: 0.1rem;
+  line-height: 2.5rem;
 }
 @media screen and (min-width: 1024px) {
   .stats-card-body__description {
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 2.5rem;
+    padding-right: 3rem;
   }
 }
 .stats-card-body-info__stats-numbers {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .stats-card-body-info__stats-numbers strong {
   font-family: "Inter", sans-serif;
@@ -147,7 +150,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-right: 3rem;
+    padding-right: 4.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
