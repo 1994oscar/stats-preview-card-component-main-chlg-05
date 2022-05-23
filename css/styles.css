@@ -34,6 +34,7 @@ body {
 }
 
 .attribution {
+  font-family: "Inter", sans-serif;
   text-align: center;
   color: hsl(0deg, 0%, 100%);
   font-size: 1.5rem;
@@ -67,9 +68,18 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width: 1024px) {
+  .stats-card-header {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 0;
+  }
 }
 .stats-card-body {
-  margin: 3rem;
+  padding: 3rem;
 }
 .stats-card-body__title {
   text-align: center;
@@ -79,8 +89,14 @@ body {
   font-weight: 700;
   color: hsla(0deg, 0%, 100%, 0.8);
 }
-.stats-card-body__title > strong {
+.stats-card-body__title strong {
   color: hsl(277deg, 64%, 61%);
+}
+@media screen and (min-width: 1024px) {
+  .stats-card-body__title {
+    text-align: left;
+    font-size: 3.3rem;
+  }
 }
 .stats-card-body__description {
   margin-top: 2rem;
@@ -88,6 +104,13 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.5rem;
   color: hsla(0deg, 0%, 100%, 0.6);
+}
+@media screen and (min-width: 1024px) {
+  .stats-card-body__description {
+    text-align: left;
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+  }
 }
 .stats-card-body-info__stats-numbers {
   margin-top: 4rem;
@@ -97,15 +120,52 @@ body {
   text-align: center;
   display: block;
   color: hsla(0deg, 0%, 100%, 0.8);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .stats-card-body-info__stats-numbers strong {
+    text-align: left;
+  }
 }
 .stats-card-body-info__stats-numbers span {
   text-align: center;
   display: block;
   color: hsla(0deg, 0%, 100%, 0.6);
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .stats-card-body-info__stats-numbers span {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .stats-card-body-info {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .stats-card-body {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 90rem;
+    padding-right: 10rem;
+    padding-left: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .stats-card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 95rem;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
